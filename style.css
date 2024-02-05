@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    background-color: #f7f7f7;
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(255, 250, 250); */
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(184, 56, 56); */
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgba(0, 0, 0, 0.952); */
+    height: 100vh;
+    pointer-events: none;
+}
+
+#workingarea {
+    width: 80%;
+    max-width: 1920px;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+#nav {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: all
+}
+
+#nav img {
+    height: 60px;
+    /* gap: 30px; */
+}
+
+#nleft,
+#nright {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#hero{
+    margin-top: 50px;
+}
+#nav a {
+    color: #ffff;
+    font-family: gilroy;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    left: 0;
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+#heroleft{
+    min-width: 50%;
+    /* height: 100px; */
+}
+#heroleft .elm{
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#heroleft .elm h1{
+    font-family:"kajiro";
+    line-height: .9;
+    font-weight: 100;
+    font-size: 11vw;
+    color: #ffff;
+
+}
+#heroright{
+    width: 20%;
+    /* height: 100px; */
+    /* background-color: rgb(255, 17, 17); */
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#heroright p{
+    /* margin-bottom: 50px; */
+    text-align: right;
+    font-size: 15px;
+    font-weight: 300;
+}
+#heroleft button{
+    padding:.5vw 2vw;
+    font-size: 4vw;
+    font-weight:300;
+    margin-top: 1vw;
+    font-family:"kajiro";
+    cursor: pointer;
+    pointer-events: all;
+}
+#heroright #imgdiv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* background-color: red; */
+    /* background-image: url(https://unsplash.com/photos/purple-and-black-galaxy-illustration-uXchDIKs4qI); */
+    /* object-fit: cover; */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+#heroright #imgdiv img{
+    object-fit: cover;
+    height: 170px;
+    width: 100%;
+}
+#heroright p:nth-child(3)
+{
+    margin-bottom: 20px;
+}
+
